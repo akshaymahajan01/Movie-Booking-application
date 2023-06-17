@@ -6,24 +6,16 @@ import userRouter from './Routes/User-route.js';
 import adminRouter from './Routes/Admin-route.js';
 import movieRouter from './Routes/Movie-route.js';
 import bookingRouter from './Routes/Booking-route.js';
-import path from 'path'
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+
 
 
 dotenv.config();
 const app = express();
 app.use(express.json());
+
+
+
 app.use(cors());
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-app.use(express.static(path.join(__dirname , '../frontend/build')))
-
-app.get('*', function(req,res){
-    res.sendFile(path.join(__dirname , '../frontend/build/index.html'));
-})
 
 
 
