@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use(cors(
     {
-        origin : ['https://movie-booking-frontend.onrender.com']
+        origin : ['https://movie-booking-worldwide.onrender.com']
     }
 ));
 
