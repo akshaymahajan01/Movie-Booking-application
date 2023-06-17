@@ -7,7 +7,7 @@ import axios from 'axios';
 import { Provider } from 'react-redux';
 import { store } from './store/redux';
 
-axios.defaults.baseURL = 'http://localhost:1111';
+axios.defaults.baseURL = 'https://movie-booking-worldwide.onrender.com';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
